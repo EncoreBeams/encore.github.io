@@ -84,15 +84,41 @@
 
 
 
-<meta name="description" content="Android码农">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Encore Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="前言：  本文基于 Ubuntu 环境下搭建，windows or mac 也是OK的基本差不多。
+Jenkins安装环境需安装JDK，SDK，并进设置环境变量
+1.去官网下载最新的Jenkins版本点此去下载
+安装
+
+打开终端Terminal
+
+输入 wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jenkins + Gradle + Nexus 环境搭建">
+<meta property="og:url" content="http://yoursite.com/2016/05/21/Jenkins-Gradle-Nexus-环境搭建/index.html">
 <meta property="og:site_name" content="Encore Blog">
-<meta property="og:description" content="Android码农">
+<meta property="og:description" content="前言：  本文基于 Ubuntu 环境下搭建，windows or mac 也是OK的基本差不多。
+Jenkins安装环境需安装JDK，SDK，并进设置环境变量
+1.去官网下载最新的Jenkins版本点此去下载
+安装
+
+打开终端Terminal
+
+输入 wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo a">
+<meta property="og:image" content="http://7xt9rl.com2.z0.glb.clouddn.com/image/android/share/1460460925322.png">
+<meta property="og:image" content="http://7xt9rl.com2.z0.glb.clouddn.com/image/android/share/1460470573112.png">
+<meta property="og:image" content="http://7xt9rl.com2.z0.glb.clouddn.com/image/android/share/1460473581118.png">
+<meta property="og:updated_time" content="2016-05-21T07:26:37.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Encore Blog">
-<meta name="twitter:description" content="Android码农">
+<meta name="twitter:title" content="Jenkins + Gradle + Nexus 环境搭建">
+<meta name="twitter:description" content="前言：  本文基于 Ubuntu 环境下搭建，windows or mac 也是OK的基本差不多。
+Jenkins安装环境需安装JDK，SDK，并进设置环境变量
+1.去官网下载最新的Jenkins版本点此去下载
+安装
+
+打开终端Terminal
+
+输入 wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo a">
+<meta name="twitter:image" content="http://7xt9rl.com2.z0.glb.clouddn.com/image/android/share/1460460925322.png">
 
 
 
@@ -110,7 +136,7 @@
   };
 </script>
 
-  <title> Encore Blog </title>
+  <title> Jenkins + Gradle + Nexus 环境搭建 | Encore Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -141,9 +167,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -270,9 +294,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -292,10 +316,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/05/21/Jenkins-Gradle-Nexus-环境搭建/" itemprop="url">
-                  Jenkins + Gradle + Nexus 环境搭建
-                </a>
+                Jenkins + Gradle + Nexus 环境搭建
               
             
           </h1>
@@ -361,9 +382,7 @@
       
 
       
-        
-          
-            <p>前言：<br>  本文基于 Ubuntu 环境下搭建，windows or mac 也是OK的基本差不多。</p>
+        <p>前言：<br>  本文基于 Ubuntu 环境下搭建，windows or mac 也是OK的基本差不多。</p>
 <h4 id="Jenkins"><a href="#Jenkins" class="headerlink" title="Jenkins"></a>Jenkins</h4><p>安装环境<br>需安装JDK，SDK，并进设置环境变量</p>
 <p>1.去官网下载最新的Jenkins版本<br><a href="https://jenkins.io/index.html" target="_blank" rel="external">点此去下载</a></p>
 <p><strong>安装</strong></p>
@@ -409,16 +428,19 @@
 <h4 id="安装Nexus"><a href="#安装Nexus" class="headerlink" title="安装Nexus"></a>安装Nexus</h4><p>下载最新版的Nexus<br><a href="http://www.sonatype.org/nexus/go/" target="_blank" rel="external">http://www.sonatype.org/nexus/go/</a><br>解压到任意位置<br>使用终端进入到该目录bin目录下即可<br><code>./nexus start</code> 启动nexus<br><a href="http://192.168.1.6:8081/nexus/" target="_blank" rel="external">http://192.168.1.6:8081/nexus/</a>  访问nexus测试是否成功</p>
 <p><code>ps:下篇文章介绍 android 本地仓库构建，jenkins 基本配置介绍</code><br>未完待续…</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
@@ -429,16 +451,38 @@
 
       
       
-        <div class="post-eof"></div>
-      
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -446,6 +490,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/05/21/Jenkins-Gradle-Nexus-环境搭建/"
+           data-title="Jenkins + Gradle + Nexus 环境搭建" data-url="http://yoursite.com/2016/05/21/Jenkins-Gradle-Nexus-环境搭建/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -465,8 +517,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -509,6 +570,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Jenkins"><span class="nav-number">1.</span> <span class="nav-text">Jenkins</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装JDK"><span class="nav-number">2.</span> <span class="nav-text">安装JDK</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Gradle"><span class="nav-number">3.</span> <span class="nav-text">Gradle</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Android-SDK"><span class="nav-number">4.</span> <span class="nav-text">Android SDK</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装Nexus"><span class="nav-number">5.</span> <span class="nav-text">安装Nexus</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -605,6 +677,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 

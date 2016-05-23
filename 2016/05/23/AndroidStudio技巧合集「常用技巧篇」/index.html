@@ -84,15 +84,97 @@
 
 
 
-<meta name="description" content="在夕阳下奔跑">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Encore Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="原文作者 : Philippe Breault
+译文出自 : 掘金翻译计划
+译者 : Jaeger, Brucezz
+校对者 :Glow Chiang, Void Main
+转载请联系，并注明出处。
+
+写在前面本文翻译自 Android Studio Tips by Philippe Breault，一共收集了62个 Android Studio 使用小技巧和快捷键。根据这些小技巧的使用场景，本">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AndroidStudio技巧合集「常用技巧篇」[转]">
+<meta property="og:url" content="http://yoursite.com/2016/05/23/AndroidStudio技巧合集「常用技巧篇」/index.html">
 <meta property="og:site_name" content="Encore Blog">
-<meta property="og:description" content="在夕阳下奔跑">
+<meta property="og:description" content="原文作者 : Philippe Breault
+译文出自 : 掘金翻译计划
+译者 : Jaeger, Brucezz
+校对者 :Glow Chiang, Void Main
+转载请联系，并注明出处。
+
+写在前面本文翻译自 Android Studio Tips by Philippe Breault，一共收集了62个 Android Studio 使用小技巧和快捷键。根据这些小技巧的使用场景，本">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/07-bookmarks.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/06-codefolding.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/38-comparewithbranch.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/34-comparewithclipboard.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/47-contextinfo.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/08-findaction.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/61-findcompletion.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/42-hideallwindows.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/01-highlight.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/41-lasttoolwindow.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/17-navigate-previous-changes.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/02-move_between_methods.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/63-nestednavigation.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/39-navigatetoparent.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/42-openpanelbynumber.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/62-openfinder.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/44-parameterinfo.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/05-quickdefinition.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/49-recentlyedited.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/14-recents.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/50-relatedfile.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/40-returntoeditor.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/19-select-in.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/12-expand_shrink_selection.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/32-multiselection.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/03-filestructure.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/46-switcher.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/37-vcspopup.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/33-columnselection.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/16-completestatement.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/10-deleteline.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/11-duplicate_lines.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/68-checkregexp.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/45-codecompletionentertab.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/53-extractmethod.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/52-extractparam.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/51-extractvariable.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/54-inline.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/18-joinlines.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/15-live_templates.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/09-movelines.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/15-movemethods.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/58-negatecompletion.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/33-postfixcompletion.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/50-relatedfile.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/55-rename.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/69-semicolondotcompletion.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/13-surround_with.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/20-unwrap.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/31-analyzedataflow.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/30-analyzestacktrace.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/26-attachdebugger.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/22-conditionalbreakpoint.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/25-diablebreakpoint.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/27-evaluateexpression.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/28-mouse_evaluate_expression.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/23-loggingbreakpoints.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/29-markobject.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/36-executionpoint.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/35-stoprocess.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/24-temporarybreakpoints.gif">
+<meta property="og:image" content="http://laobie.github.io/assets/img/studio_tips/04-callinghierarchy.gif">
+<meta property="og:updated_time" content="2016-05-23T10:01:00.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Encore Blog">
-<meta name="twitter:description" content="在夕阳下奔跑">
+<meta name="twitter:title" content="AndroidStudio技巧合集「常用技巧篇」[转]">
+<meta name="twitter:description" content="原文作者 : Philippe Breault
+译文出自 : 掘金翻译计划
+译者 : Jaeger, Brucezz
+校对者 :Glow Chiang, Void Main
+转载请联系，并注明出处。
+
+写在前面本文翻译自 Android Studio Tips by Philippe Breault，一共收集了62个 Android Studio 使用小技巧和快捷键。根据这些小技巧的使用场景，本">
+<meta name="twitter:image" content="http://laobie.github.io/assets/img/studio_tips/07-bookmarks.gif">
 
 
 
@@ -110,7 +192,7 @@
   };
 </script>
 
-  <title> Encore Blog </title>
+  <title> AndroidStudio技巧合集「常用技巧篇」[转] | Encore Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -141,9 +223,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -270,9 +350,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -292,10 +372,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/05/23/AndroidStudio技巧合集「常用技巧篇」/" itemprop="url">
-                  AndroidStudio技巧合集「常用技巧篇」[转]
-                </a>
+                AndroidStudio技巧合集「常用技巧篇」[转]
               
             
           </h1>
@@ -361,9 +438,7 @@
       
 
       
-        
-          
-            <ul>
+        <ul>
 <li>原文作者 : <a href="https://github.com/pavlospt" target="_blank" rel="external">Philippe Breault</a></li>
 <li>译文出自 : <a href="https://github.com/xitu/gold-miner" target="_blank" rel="external">掘金翻译计划</a></li>
 <li>译者 : <a href="https://github.com/laobie" target="_blank" rel="external">Jaeger</a>, <a href="https://github.com/brucezz" target="_blank" rel="external">Brucezz</a></li>
@@ -809,16 +884,19 @@
 </ul>
 <p><img src="http://laobie.github.io/assets/img/studio_tips/04-callinghierarchy.gif" alt=""></p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
@@ -826,184 +904,55 @@
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/05/21/Jenkins-Gradle-Nexus-环境搭建/" rel="next" title="Jenkins + Gradle + Nexus 环境搭建">
+                <i class="fa fa-chevron-left"></i> Jenkins + Gradle + Nexus 环境搭建
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/05/21/Jenkins-Gradle-Nexus-环境搭建/" itemprop="url">
-                  Jenkins + Gradle + Nexus 环境搭建
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-21T15:19:58+08:00" content="2016-05-21">
-              2016-05-21
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Android/" itemprop="url" rel="index">
-                    <span itemprop="name">Android</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/05/21/Jenkins-Gradle-Nexus-环境搭建/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/21/Jenkins-Gradle-Nexus-环境搭建/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>前言：<br>  本文基于 Ubuntu 环境下搭建，windows or mac 也是OK的基本差不多。。</p>
-<h4 id="Jenkins"><a href="#Jenkins" class="headerlink" title="Jenkins"></a>Jenkins</h4><p>安装环境<br>需安装JDK，SDK，并进设置环境变量</p>
-<p>1.去官网下载最新的Jenkins版本<br><a href="https://jenkins.io/index.html" target="_blank" rel="external">点此去下载</a></p>
-<p><strong>安装</strong></p>
-<blockquote>
-<p>打开终端Terminal</p>
-<ol>
-<li>输入 wget -q -O - <a href="http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key" target="_blank" rel="external">http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key</a> | sudo apt-key add -  </li>
-<li>sudo sh -c ‘echo deb <a href="http://pkg.jenkins-ci.org/debian" target="_blank" rel="external">http://pkg.jenkins-ci.org/debian</a> binary/ &gt; /etc/apt/sources.list.d/jenkins.list’  </li>
-<li>sudo apt-get update  </li>
-<li>sudo apt-get install jenkins  </li>
-</ol>
-</blockquote>
-<p><code>Jenkins home: /var/lib/jenkins</code></p>
-<p><strong>启动/关闭</strong></p>
-<blockquote>
-<p>启动 sudo /etc/init.d/jenkins start<br>关闭 sudo /etc/init.d/jenkins stop  </p>
-</blockquote>
-<p><code>log路径/var/log/jenkins/jenkins.log</code></p>
-<p>访问</p>
-<blockquote>
-<p><a href="http://192.168.1.6:8080/" target="_blank" rel="external">http://192.168.1.6:8080/</a>   填写当前本机IP</p>
-</blockquote>
-<h4 id="安装JDK"><a href="#安装JDK" class="headerlink" title="安装JDK"></a>安装JDK</h4><p>去下载jdk最新1.8版本<br><a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="external">点击下载-&gt;jdk-8u77-linux-x64.tar.gz</a></p>
-<p>如果java目录没有创建则创建Java的目标路径文件夹，这里我们放在usr/lib/jvm下面。在终端下操作：<br><code>$  sudo mkdir /usr/lib/jvm</code><br>之后输入你的密码完成创建</p>
-<p>解压你下载的jdk压缩文件至你创建的目录，用以下命令。<br><code>$ sudo tar -C /usr/lib/jvm -xzf jdk-8u77-linux-x64.tar.gz</code><br>注意把你的jdk文件放到你的主页home下，这里我放到”下载”的上一个目录</p>
-<p>配置环境变量命令：<br><code>$sudo gedit ~/.bashrc</code><br>添加以下代码(目录替换为jdk目录)：<br>export JAVA_HOME=/usr/lib/jvm/java1.8<br>export JRE_HOME=${JAVA_HOME}/jre<br>export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib<br>export PATH=${JAVA_HOME}/bin:$PATH</p>
-<p>重启电脑:<br>查看是否配置成功：java -version</p>
-<blockquote>
-<p><strong>Jenkins jdk配置</strong><br><a href="http://192.168.1.6:8080/" target="_blank" rel="external">http://192.168.1.6:8080/</a>  访问jenkins首页<br>访问 系统管理 - 系统设置 -JDK - JDK安装<br>配置如下,目录配置正常目录<br><img src="http://7xt9rl.com2.z0.glb.clouddn.com/image/android/share/1460460925322.png" alt=""></p>
-</blockquote>
-<h4 id="Gradle"><a href="#Gradle" class="headerlink" title="Gradle"></a>Gradle</h4><p>通过官网下载gradle最新版本<br><a href="http://gradle.org/gradle-download/" target="_blank" rel="external">http://gradle.org/gradle-download/</a></p>
-<blockquote>
-<p><strong>Jenkins Gradle配置</strong><br><a href="http://192.168.1.6:8080/" target="_blank" rel="external">http://192.168.1.6:8080/</a>  访问jenkins首页<br>访问 系统管理 - 系统设置 -Gradle - Gradle安装<br>配置如下,目录配置正常目录<br><img src="http://7xt9rl.com2.z0.glb.clouddn.com/image/android/share/1460470573112.png" alt="enter image description here"></p>
-<h4 id="Android-SDK"><a href="#Android-SDK" class="headerlink" title="Android SDK"></a>Android SDK</h4><p>下载最新的SDK<br><a href="http://developer.android.com/intl/zh-cn/sdk/index.html#download" target="_blank" rel="external">http://developer.android.com/intl/zh-cn/sdk/index.html#download</a></p>
-</blockquote>
-<p>配置环境变量命令：<br><code>$sudo gedit ~/.bashrc</code></p>
-<p>添加以下代码：<br><code>export ANDROID_HOME=/home/parallels/Desktop/android-sdk-linux/</code></p>
-<p>然后在终端打上 adb测试是否成功配置<br>定向到sdk目录<br>/home/parallels/Desktop/android-sdk-linux/tools 运行命令 ./android 可以打开SDK Manager管理器, 然后Download部分版本与升级Tools, (目前我们5.1就Download5.1即可) buildTools升级到最新版本</p>
-<blockquote>
-<p>Jenkins配置AndroidSDK<br><a href="http://192.168.1.6:8080/jenkins/" target="_blank" rel="external">http://192.168.1.6:8080/jenkins/</a>  访问jenkins首页<br>访问 系统管理 - 系统设置 - 全局属性<br><img src="http://7xt9rl.com2.z0.glb.clouddn.com/image/android/share/1460473581118.png" alt="enter image description here"></p>
-<p><code>Jenkins编译失败,常见问题</code><br>1.Cannot run program “/home/user/Android/Sdk/build-tools/23.0.2/aapt”: error=2 No such file or directory”<br><code>sudo apt-get install lib32stdc++6 lib32z1</code>  增加支持<br>2.support 包引用失败<br><code>SDKManager Download local Support library</code>  </p>
-</blockquote>
-<h4 id="安装Nexus"><a href="#安装Nexus" class="headerlink" title="安装Nexus"></a>安装Nexus</h4><p>下载最新版的Nexus<br><a href="http://www.sonatype.org/nexus/go/" target="_blank" rel="external">http://www.sonatype.org/nexus/go/</a><br>解压到任意位置<br>使用终端进入到该目录bin目录下即可<br><code>./nexus start</code> 启动nexus<br><a href="http://192.168.1.6:8081/nexus/" target="_blank" rel="external">http://192.168.1.6:8081/nexus/</a>  访问nexus测试是否成功</p>
-<p><code>ps:下篇文章介绍 android 本地仓库构建，jenkins 基本配置介绍</code></p>
-<p>未完待续…</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -1011,6 +960,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/05/23/AndroidStudio技巧合集「常用技巧篇」/"
+           data-title="AndroidStudio技巧合集「常用技巧篇」[转]" data-url="http://yoursite.com/2016/05/23/AndroidStudio技巧合集「常用技巧篇」/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -1030,8 +987,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -1074,6 +1040,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#写在前面"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-书签（Bookmarks）"><span class="nav-number">1.1.</span> <span class="nav-text">1. 书签（Bookmarks）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-折叠-展开代码块（Collapse-Expand-Code-Block）"><span class="nav-number">1.2.</span> <span class="nav-text">2. 折叠/展开代码块（Collapse Expand Code Block）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-与分支比对（Compare-With-Branch-Git-）"><span class="nav-number">1.3.</span> <span class="nav-text">3. 与分支比对（Compare With Branch (Git)）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-与剪切板比对（Compare-With-Clipboard）"><span class="nav-number">1.4.</span> <span class="nav-text">4. 与剪切板比对（Compare With Clipboard）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-上下文信息（Context-Info）"><span class="nav-number">1.5.</span> <span class="nav-text">5. 上下文信息（Context Info）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-查找操作（Find-Action）"><span class="nav-number">1.6.</span> <span class="nav-text">6. 查找操作（Find Action）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-查找补全（Find-Complection）"><span class="nav-number">1.7.</span> <span class="nav-text">7. 查找补全（Find Complection）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-隐藏所有面板（Hide-All-Panels）"><span class="nav-number">1.8.</span> <span class="nav-text">8. 隐藏所有面板（Hide All Panels）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-高亮一切（Hightlight-All-the-Things）"><span class="nav-number">1.9.</span> <span class="nav-text">9. 高亮一切（Hightlight All the Things）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10-回到上一个工具窗口（Jump-to-Last-Tool-Window）"><span class="nav-number">1.10.</span> <span class="nav-text">10. 回到上一个工具窗口（Jump to Last Tool Window）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#11-上一个编辑位置（Last-Edit-Location）"><span class="nav-number">1.11.</span> <span class="nav-text">11. 上一个编辑位置（Last Edit Location）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#12-在方法和内部类之间跳转（Move-Between-Methods-and-Inner-Classes）"><span class="nav-number">1.12.</span> <span class="nav-text">12. 在方法和内部类之间跳转（Move Between Methods and Inner Classes）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#13-定位到嵌套文件（Navigate-to-Nested-File）"><span class="nav-number">1.13.</span> <span class="nav-text">13. 定位到嵌套文件（Navigate to Nested File）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#14-定位到父类（Navigate-to-parent）"><span class="nav-number">1.14.</span> <span class="nav-text">14. 定位到父类（Navigate to parent）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#15-根据编号打开面板（Open-a-Panel-by-Its-Number）"><span class="nav-number">1.15.</span> <span class="nav-text">15. 根据编号打开面板（Open a Panel by Its Number）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#16-在外部打开文件（Open-File-Externally）"><span class="nav-number">1.16.</span> <span class="nav-text">16. 在外部打开文件（Open File Externally）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#17-参数信息（Parameter-Info）"><span class="nav-number">1.17.</span> <span class="nav-text">17. 参数信息（Parameter Info）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#18-快速查看定义（Quick-Definition-Lookup）"><span class="nav-number">1.18.</span> <span class="nav-text">18. 快速查看定义（Quick Definition Lookup）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#19-最近修改的文件（Recently-Changed-Files）"><span class="nav-number">1.19.</span> <span class="nav-text">19. 最近修改的文件（Recently Changed Files）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#20-最近访问（Recents）"><span class="nav-number">1.20.</span> <span class="nav-text">20. 最近访问（Recents）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#21-相关文件（Related-File）"><span class="nav-number">1.21.</span> <span class="nav-text">21. 相关文件（Related File）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#22-返回到编辑器（Return-to-the-Editor）"><span class="nav-number">1.22.</span> <span class="nav-text">22. 返回到编辑器（Return to the Editor）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#23-Select-In"><span class="nav-number">1.23.</span> <span class="nav-text">23. Select In</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#24-扩大-缩小选择（Extend-Shrink-Selection）"><span class="nav-number">1.24.</span> <span class="nav-text">24. 扩大/缩小选择（Extend/Shrink Selection）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#25-Sublime-Text式的多处选择（Sublime-Text-Multi-Selection）"><span class="nav-number">1.25.</span> <span class="nav-text">25. Sublime Text式的多处选择（Sublime Text Multi Selection）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#26-文件结构弹窗（The-File-Structure-Popup）"><span class="nav-number">1.26.</span> <span class="nav-text">26. 文件结构弹窗（The File Structure Popup）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#27-切换器（The-Switcher）"><span class="nav-number">1.27.</span> <span class="nav-text">27. 切换器（The Switcher）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#28-版本控制操作弹窗（VCS-Operations-Popup）"><span class="nav-number">1.28.</span> <span class="nav-text">28. 版本控制操作弹窗（VCS Operations Popup）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#29-列选择-块选择（Column-Selection）"><span class="nav-number">1.29.</span> <span class="nav-text">29. 列选择/块选择（Column Selection）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#30-语句补全（Complete-Statement）"><span class="nav-number">1.30.</span> <span class="nav-text">30. 语句补全（Complete Statement）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#31-删除行（Delete-Line）"><span class="nav-number">1.31.</span> <span class="nav-text">31. 删除行（Delete Line）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#32-行复制（Duplicate-Line）"><span class="nav-number">1.32.</span> <span class="nav-text">32. 行复制（Duplicate Line）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#33-编写正则表达式（Edit-Regex）"><span class="nav-number">1.33.</span> <span class="nav-text">33. 编写正则表达式（Edit Regex）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#34-使用Enter和Tab进行代码补全的差别（Enter-vs-Tab-for-Code-Completion）"><span class="nav-number">1.34.</span> <span class="nav-text">34. 使用Enter和Tab进行代码补全的差别（Enter vs Tab for Code Completion）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#35-提取方法（Extract-Method）"><span class="nav-number">1.35.</span> <span class="nav-text">35. 提取方法（Extract Method）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#36-提取参数（Extract-Parameter）"><span class="nav-number">1.36.</span> <span class="nav-text">36. 提取参数（Extract Parameter）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#37-提取变量（Extract-Variable）"><span class="nav-number">1.37.</span> <span class="nav-text">37. 提取变量（Extract Variable）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#38-内置（Inline）"><span class="nav-number">1.38.</span> <span class="nav-text">38. 内置（Inline）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#39-合并行和文本（Join-Lines-and-Literals）"><span class="nav-number">1.39.</span> <span class="nav-text">39. 合并行和文本（Join Lines and Literals）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#40-动态模板（Live-Templates）"><span class="nav-number">1.40.</span> <span class="nav-text">40. 动态模板（Live Templates）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#41-上下移动行（Move-Lines-Up-Down）"><span class="nav-number">1.41.</span> <span class="nav-text">41. 上下移动行（Move Lines Up Down）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#42-移动方法（Move-Methods）"><span class="nav-number">1.42.</span> <span class="nav-text">42. 移动方法（Move Methods）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#43-取反补全（Negation-Completion）"><span class="nav-number">1.43.</span> <span class="nav-text">43. 取反补全（Negation Completion）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#44-后缀补全（Postfix-Completion）"><span class="nav-number">1.44.</span> <span class="nav-text">44. 后缀补全（Postfix Completion）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#45-重构（Refactor-This）"><span class="nav-number">1.45.</span> <span class="nav-text">45. 重构（Refactor This）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#46-重命名（Rename）"><span class="nav-number">1.46.</span> <span class="nav-text">46. 重命名（Rename）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#47-分号-点-补全（Semicolon-Dot-Completion）"><span class="nav-number">1.47.</span> <span class="nav-text">47. 分号/点 补全（Semicolon Dot Completion）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#48-包裹代码（Surround-With）"><span class="nav-number">1.48.</span> <span class="nav-text">48. 包裹代码（Surround With）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#49-移除包裹代码（Unwrap-Remove）"><span class="nav-number">1.49.</span> <span class="nav-text">49. 移除包裹代码（Unwrap Remove）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#50-分析传入数据流（Analyze-data-flow-to-here）"><span class="nav-number">1.50.</span> <span class="nav-text">50. 分析传入数据流（Analyze data flow to here）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#51-堆栈追踪分析（Analyze-Stacktrace）"><span class="nav-number">1.51.</span> <span class="nav-text">51. 堆栈追踪分析（Analyze Stacktrace）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#52-关联调试程序（Attach-Debugger）"><span class="nav-number">1.52.</span> <span class="nav-text">52.  关联调试程序（Attach Debugger）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#53-条件断点（Conditional-Breakpoints）"><span class="nav-number">1.53.</span> <span class="nav-text">53. 条件断点（Conditional Breakpoints）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#54-禁用断点（Disable-Breakpoints）"><span class="nav-number">1.54.</span> <span class="nav-text">54. 禁用断点（Disable Breakpoints）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#55-计算表达式（Evaluate-Expression）"><span class="nav-number">1.55.</span> <span class="nav-text">55. 计算表达式（Evaluate Expression）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#56-审查变量（Inspect-Variable）"><span class="nav-number">1.56.</span> <span class="nav-text">56. 审查变量（Inspect Variable）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#57-日志断点（Logging-Breakpoints）"><span class="nav-number">1.57.</span> <span class="nav-text">57. 日志断点（Logging Breakpoints）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#58-标记对象（Mark-Object）"><span class="nav-number">1.58.</span> <span class="nav-text">58. 标记对象（Mark Object）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#59-显示当前运行点（Show-Execution-Point）"><span class="nav-number">1.59.</span> <span class="nav-text">59. 显示当前运行点（Show Execution Point）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#60-终止进程（Stop-Process）"><span class="nav-number">1.60.</span> <span class="nav-text">60. 终止进程（Stop Process）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#61-临时断点（Temporary-Breakpoints）"><span class="nav-number">1.61.</span> <span class="nav-text">61. 临时断点（Temporary Breakpoints）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#62-调用层级树弹窗（The-Call-Hierarchy-Popup）"><span class="nav-number">1.62.</span> <span class="nav-text">62. 调用层级树弹窗（The Call Hierarchy Popup）</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -1170,6 +1147,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 

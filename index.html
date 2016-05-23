@@ -313,25 +313,6 @@
           </span>
 
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/AndroidStudio/" itemprop="url" rel="index">
-                    <span itemprop="name">AndroidStudio</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
 
           
             
@@ -362,12 +343,11 @@
 
       
         
-          
-            <ul>
-<li>原文作者 : <a href="https://github.com/pavlospt" target="_blank" rel="external">Philippe Breault</a></li>
-<li>译文出自 : <a href="https://github.com/xitu/gold-miner" target="_blank" rel="external">掘金翻译计划</a></li>
-<li>译者 : <a href="https://github.com/laobie" target="_blank" rel="external">Jaeger</a>, <a href="https://github.com/brucezz" target="_blank" rel="external">Brucezz</a></li>
-<li>校对者 :<a href="https://github.com/Glowin" target="_blank" rel="external">Glow Chiang</a>, <a href="https://github.com/void-main" target="_blank" rel="external">Void Main</a></li>
+          <ul>
+<li>原文作者 : <a href="https://github.com/pavlospt">Philippe Breault</a></li>
+<li>译文出自 : <a href="https://github.com/xitu/gold-miner">掘金翻译计划</a></li>
+<li>译者 : <a href="https://github.com/laobie">Jaeger</a>, <a href="https://github.com/brucezz">Brucezz</a></li>
+<li>校对者 :<a href="https://github.com/Glowin">Glow Chiang</a>, <a href="https://github.com/void-main">Void Main</a></li>
 <li>转载请联系，并注明出处。</li>
 </ul>
 <h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><p>本文翻译自 <a href="https://github.com/pavlospt/Android-Studio-Tips-by-Philippe-Breault/wiki" target="_blank">Android Studio Tips by Philippe Breault</a>，一共收集了62个 Android Studio 使用小技巧和快捷键。<br>根据这些小技巧的使用场景，本文将这62个小技巧分为常用技巧（1 – 28）、编码技巧（29 – 49）和调试技巧（50 – 62），分成三个部分。</p>
@@ -385,431 +365,12 @@
 </li>
 <li><strong>更多：</strong>当你为某个书签指定了标记，你可以使用快捷键 Ctrl + 标记 来快速跳转到标记处，比如输入Ctrl + 1，跳到标记为1的书签处。</li>
 </ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/07-bookmarks.gif" alt=""></p>
-<h4 id="2-折叠-展开代码块（Collapse-Expand-Code-Block）"><a href="#2-折叠-展开代码块（Collapse-Expand-Code-Block）" class="headerlink" title="2. 折叠/展开代码块（Collapse Expand Code Block）"></a>2. 折叠/展开代码块（Collapse Expand Code Block）</h4><ul>
-<li><strong>描述：</strong>该操作提供一种方法，让你隐藏你不关心的部分代码，以一种较为简洁的格式显示关键代码。一个有意思的用法是隐藏匿名内部类的代码，让其看起来像一个Lambda表达式。</li>
-<li><strong>快捷键：</strong>Cmd + “+”/“-“(OS X)、Ctrl + Shift + “+”/“-“(Windows/Linux);</li>
-<li><strong>更多：</strong>可以在Settig → Editor → General → Code Folding 中设置折叠规则。</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/06-codefolding.gif" alt=""></p>
-<h4 id="3-与分支比对（Compare-With-Branch-Git-）"><a href="#3-与分支比对（Compare-With-Branch-Git-）" class="headerlink" title="3. 与分支比对（Compare With Branch (Git)）"></a>3. 与分支比对（Compare With Branch (Git)）</h4><ul>
-<li><strong>描述：</strong>假如你的项目是使用git来管理的，你可以将当前文件或者文件夹与其他的分支进行比对。比较有用的是可以让你了解到你与主分支有多少差别。</li>
-<li><strong>调用：</strong>Menu → VCS → Git → Compare With Branch </li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/38-comparewithbranch.gif" alt=""></p>
-<h4 id="4-与剪切板比对（Compare-With-Clipboard）"><a href="#4-与剪切板比对（Compare-With-Clipboard）" class="headerlink" title="4. 与剪切板比对（Compare With Clipboard）"></a>4. 与剪切板比对（Compare With Clipboard）</h4><ul>
-<li><strong>描述：</strong>将当前选中的部分与剪切板上的内容进行比对。</li>
-<li><strong>调用：</strong>右键选中的部分，在右键菜单中选择“Compare With Clipboard”。</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/34-comparewithclipboard.gif" alt=""></p>
-<h4 id="5-上下文信息（Context-Info）"><a href="#5-上下文信息（Context-Info）" class="headerlink" title="5. 上下文信息（Context Info）"></a>5. 上下文信息（Context Info）</h4><ul>
-<li><strong>描述：</strong>当前作用域定义超过滚动区域，执行该操作将显示所在的上下文信息，通常它显示的是类名或者内部类类名或者当前所在的方法名。该操作在xml文件中同样适用。</li>
-<li><strong>调用：</strong>Menu → View → Context Info</li>
-<li><strong>快捷键：</strong>Alt + Q (Windows/Linux)</li>
-<li><strong>更多：</strong>个人认为，这个功能更好的用法是快速查看当前类继承的父类或者实现的接口。</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/47-contextinfo.gif" alt=""></p>
-<h4 id="6-查找操作（Find-Action）"><a href="#6-查找操作（Find-Action）" class="headerlink" title="6. 查找操作（Find Action）"></a>6. 查找操作（Find Action）</h4><ul>
-<li><strong>描述：</strong>输入某个操作的名称，快速查找，对于没有快捷键的部分操作这是一个很有用的技巧。</li>
-<li><strong>快捷键：</strong>Cmd +Shift + A(OS X)、Ctrl + Shift + A(Windows/Linux)；</li>
-<li><strong>更多：</strong>当某个操作是有快捷键的，会显示在旁边。</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/08-findaction.gif" alt=""></p>
-<h4 id="7-查找补全（Find-Complection）"><a href="#7-查找补全（Find-Complection）" class="headerlink" title="7. 查找补全（Find Complection）"></a>7. 查找补全（Find Complection）</h4><ul>
-<li><strong>描述：</strong>当你在一个文件中进行查找时，使用自动补全快捷键可以给出在当前文件中出现的建议单词；</li>
-<li><strong>快捷键：</strong>Cmd + F(OS X),Ctrl + F(Windows/Linux),输入一些字符，然后使用自动补全；</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/61-findcompletion.gif" alt=""></p>
-<h4 id="8-隐藏所有面板（Hide-All-Panels）"><a href="#8-隐藏所有面板（Hide-All-Panels）" class="headerlink" title="8. 隐藏所有面板（Hide All Panels）"></a>8. 隐藏所有面板（Hide All Panels）</h4><ul>
-<li><strong>描述：</strong>切换编辑器铺满整个程序界面，隐藏其他的面板。再次执行该操作，将会回到隐藏前的状态。</li>
-<li><strong>调用：</strong>Menu → Window → Active Tool Window → Hide All Windows；</li>
-<li><strong>快捷键：</strong>Cmd +Shift + F12(OS X)、Ctrl + Shift + F12(Windows/Linux)；</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/42-hideallwindows.gif" alt=""></p>
-<h4 id="9-高亮一切（Hightlight-All-the-Things）"><a href="#9-高亮一切（Hightlight-All-the-Things）" class="headerlink" title="9. 高亮一切（Hightlight All the Things）"></a>9. 高亮一切（Hightlight All the Things）</h4><ul>
-<li><strong>描述：</strong>该操作将会高亮某个字符在当前文件中所有出现的地方。这不仅仅是简单的匹配，实际上它会分析当前的作用域，只高亮相关的部分。</li>
-<li><strong>调用：</strong>Menu → Edit → Find → Highlight Usages in File；</li>
-<li><strong>定位到上一处/下一处：</strong>Menu → Edit → Find → Find Next/Previous；</li>
-<li><strong>快捷键：</strong>相关快捷键请在菜单中查看；</li>
-<li><strong>更多：</strong><ul>
-<li>如果高亮一个方法的<code>return</code>或<code>throw</code>语句，将会高亮这个方法的所有出口/结束点；</li>
-<li>如果高亮某个类定义处的<code>extend</code>或<code>implements</code>语句，将会高亮继承的或实现的方法；</li>
-<li>高亮一个<code>import</code>语句也会高亮使用到的地方；</li>
-<li>按下Esc可以退出高亮模式；</li>
-</ul>
-</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/01-highlight.gif" alt=""></p>
-<h4 id="10-回到上一个工具窗口（Jump-to-Last-Tool-Window）"><a href="#10-回到上一个工具窗口（Jump-to-Last-Tool-Window）" class="headerlink" title="10. 回到上一个工具窗口（Jump to Last Tool Window）"></a>10. 回到上一个工具窗口（Jump to Last Tool Window）</h4><ul>
-<li><strong>描述：</strong>有时候你会从某个工具窗口跳到编辑器里面，然后又需要重新回到刚才操作的那个工具窗，比如你查找使用情况的时，使用该操作可以在不使用鼠标的情况下跳转到之前的工具窗口。</li>
-<li><strong>快捷键：</strong>F12；</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/41-lasttoolwindow.gif" alt=""></p>
-<h4 id="11-上一个编辑位置（Last-Edit-Location）"><a href="#11-上一个编辑位置（Last-Edit-Location）" class="headerlink" title="11. 上一个编辑位置（Last Edit Location）"></a>11. 上一个编辑位置（Last Edit Location）</h4><ul>
-<li><strong>描述：</strong>该操作将使得你导航到上一处你改动过的地方，这与点击工具栏上的返回箭头回到上一个定位位置是不一样的，该操作将会返回到上一个编辑的位置。</li>
-<li><strong>快捷键：</strong> Cmd + Shift + Delete(OS X)、Ctrl + Shift + Backspace﻿(Windows/Linux);</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/17-navigate-previous-changes.gif" alt=""></p>
-<h4 id="12-在方法和内部类之间跳转（Move-Between-Methods-and-Inner-Classes）"><a href="#12-在方法和内部类之间跳转（Move-Between-Methods-and-Inner-Classes）" class="headerlink" title="12. 在方法和内部类之间跳转（Move Between Methods and Inner Classes）"></a>12. 在方法和内部类之间跳转（Move Between Methods and Inner Classes）</h4><ul>
-<li><strong>描述：</strong>该操作让光标在当前文件的方法或内部类的名字间跳转。</li>
-<li><strong>调用：</strong>Navigate → Next Method/Previous Method;</li>
-<li><strong>快捷键：</strong>Ctrl + Up/Down﻿(OS X)、Alt + Up/Down﻿(Windows/Linux);</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/02-move_between_methods.gif" alt=""></p>
-<h4 id="13-定位到嵌套文件（Navigate-to-Nested-File）"><a href="#13-定位到嵌套文件（Navigate-to-Nested-File）" class="headerlink" title="13. 定位到嵌套文件（Navigate to Nested File）"></a>13. 定位到嵌套文件（Navigate to Nested File）</h4><ul>
-<li><strong>描述：</strong>有时你有一堆存放在不同目录下的同名文件，例如不同模块下的<code>AndroidManifest.xml</code>文件，当你想定位到其中的一个文件，你会得到一堆搜索结果，你还得辨认哪个才是你需要的。通过在检索框中输入部分路径的前缀，并添加斜杠号，你就可以在第一次尝试的时候就找到正确的那个。</li>
-<li><strong>快捷键：</strong>Shift + Cmd + O(OS X)、Shift + Ctrl + N﻿(Windows/Linux);</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/63-nestednavigation.gif" alt=""></p>
-<h4 id="14-定位到父类（Navigate-to-parent）"><a href="#14-定位到父类（Navigate-to-parent）" class="headerlink" title="14. 定位到父类（Navigate to parent）"></a>14. 定位到父类（Navigate to parent）</h4><ul>
-<li><strong>描述：</strong>如果光标是在一个继承父类重写的方法里，这个操作将定位到父类实现的地方。如果光标是在类名上，则定位到父类类名。</li>
-<li>Menu → Navigate → Super Class/Method</li>
-<li><strong>快捷键：</strong>Cmd + U(OS X)、Ctrl + U(Windows/Linux);</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/39-navigatetoparent.gif" alt=""></p>
-<h4 id="15-根据编号打开面板（Open-a-Panel-by-Its-Number）"><a href="#15-根据编号打开面板（Open-a-Panel-by-Its-Number）" class="headerlink" title="15. 根据编号打开面板（Open a Panel by Its Number）"></a>15. 根据编号打开面板（Open a Panel by Its Number）</h4><ul>
-<li><strong>描述：</strong>你可能已经注意到某些面板的名称左边有一个数字，这里有个快捷操作可以打开它们。如果你没看到面板的名称，请点击IDE的左下角的切换按钮。</li>
-<li><strong>快捷键：</strong>Cmd + 数字(OS X)、Alt + 数字(Windows/Linux);</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/42-openpanelbynumber.gif" alt=""></p>
-<h4 id="16-在外部打开文件（Open-File-Externally）"><a href="#16-在外部打开文件（Open-File-Externally）" class="headerlink" title="16. 在外部打开文件（Open File Externally）"></a>16. 在外部打开文件（Open File Externally）</h4><ul>
-<li><strong>描述：</strong>通过这个快捷键，简单地点击Tab，就可以打开当前文件所在的位置或者该文件的任意上层路径。</li>
-<li><strong>快捷键：</strong>Cmd + 单击Tab(OS X)、Ctrl + 点击Tab(Windows/Linux);</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/62-openfinder.gif" alt=""></p>
-<h4 id="17-参数信息（Parameter-Info）"><a href="#17-参数信息（Parameter-Info）" class="headerlink" title="17. 参数信息（Parameter Info）"></a>17. 参数信息（Parameter Info）</h4><ul>
-<li><strong>描述：</strong>这个操作将显示和你在方法声明处写一样的参数列表，当你想看某个存在的方法的参数，这是一个很有用的操作。光标下的参数显示为黄色，如果没有参数显示黄色，意味着你的方法调用是无效的，很可能是某个参数分配不对。（例如一个浮点数赋值给了整型参数）。如果你正在写一个方法调用，突然离开编辑的地方，再返回的时候，输入一个逗号，就可以重新触发参数信息。</li>
-<li><strong>快捷键：</strong>Cmd + P(OS X)、Ctrl + P(Windows/Linux);</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/44-parameterinfo.gif" alt=""></p>
-<h4 id="18-快速查看定义（Quick-Definition-Lookup）"><a href="#18-快速查看定义（Quick-Definition-Lookup）" class="headerlink" title="18. 快速查看定义（Quick Definition Lookup）"></a>18. 快速查看定义（Quick Definition Lookup）</h4><ul>
-<li><strong>描述：</strong>你曾经是否想查看一个方法或者类的具体实现，但是不想离开当前界面？   该操作可以帮你搞定。</li>
-<li><strong>快捷键：</strong>Alt + Space / Cmd + Y(OS X)、Ctrl + Shift + I(Windows/Linux)</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/05-quickdefinition.gif" alt=""></p>
-<h4 id="19-最近修改的文件（Recently-Changed-Files）"><a href="#19-最近修改的文件（Recently-Changed-Files）" class="headerlink" title="19. 最近修改的文件（Recently Changed Files）"></a>19. 最近修改的文件（Recently Changed Files）</h4><ul>
-<li><strong>描述：</strong>该操作类似于“最近访问（Recents）”弹窗，会显示最近本地修改过的文件列表，根据修改时间排列。可以输入字符来过滤列表结果。</li>
-<li><strong>快捷键：</strong>Cmd + Shift + E(OS X)、Ctrl + Shift + E(Windows/Linux)</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/49-recentlyedited.gif" alt=""></p>
-<h4 id="20-最近访问（Recents）"><a href="#20-最近访问（Recents）" class="headerlink" title="20. 最近访问（Recents）"></a>20. 最近访问（Recents）</h4><ul>
-<li><strong>描述：</strong>该操作可以得到一个最近访问文件的可搜索的列表。</li>
-<li><strong>快捷键：</strong>Cmd + E(OS X)、Ctrl + E(Windows/Linux)</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/14-recents.gif" alt=""></p>
-<h4 id="21-相关文件（Related-File）"><a href="#21-相关文件（Related-File）" class="headerlink" title="21. 相关文件（Related File）"></a>21. 相关文件（Related File）</h4><ul>
-<li><strong>描述：</strong>该操作有助于在布局文件和Activity/Fragment之间轻松跳转。这也是一个快捷操作，在类名/布局顶端的左侧。</li>
-<li><strong>快捷键：</strong>Ctrl + Cmd + Up(OS X)、Ctrl + Alt + Home(Windows/Linux)</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/50-relatedfile.gif" alt=""></p>
-<h4 id="22-返回到编辑器（Return-to-the-Editor）"><a href="#22-返回到编辑器（Return-to-the-Editor）" class="headerlink" title="22. 返回到编辑器（Return to the Editor）"></a>22. 返回到编辑器（Return to the Editor）</h4><ul>
-<li><p><strong>描述：</strong>一大堆快捷键操作会把你从编辑器带走（type hierarchy, find usages, 等等）。如果你想返回到编辑器，你有两个选项：</p>
-<ol>
-<li>Esc：该操作仅仅把光标移回编辑器。</li>
-<li>Shift + Esc：该操作会关闭当前面板，然后把光标移回到编辑器。</li>
-</ol>
-</li>
-<li><p><strong>快捷键：</strong></p>
-<ul>
-<li>返回但保留打开的面板：Esc</li>
-<li>关闭面板并返回：Shift + Esc</li>
-</ul>
-</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/40-returntoeditor.gif" alt=""></p>
-<h4 id="23-Select-In"><a href="#23-Select-In" class="headerlink" title="23. Select In"></a>23. Select In</h4><ul>
-<li><p><strong>描述：</strong>拿着当前文件然后问你在哪里选中该文件。恕我直言，最有用的就是在项目结构或者资源管理器中打开该文件。每一个操作都有数字或者字母作为前缀，可以通过这个前缀来快速跳转。通常，我会 Alt + F1 然后 回车(Enter) 来打开项目视图，然后 再用 Alt + F1 在OS X的Finder里找到文件。你可以在文件中或者直接在项目视图里使用该操作。</p>
-</li>
-<li><p><strong>快捷键：</strong>Alt + F1；</p>
-</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/19-select-in.gif" alt=""></p>
-<h4 id="24-扩大-缩小选择（Extend-Shrink-Selection）"><a href="#24-扩大-缩小选择（Extend-Shrink-Selection）" class="headerlink" title="24. 扩大/缩小选择（Extend/Shrink Selection）"></a>24. 扩大/缩小选择（Extend/Shrink Selection）</h4><ul>
-<li><strong>描述：</strong>该操作会在上下文逐渐扩大/缩小当前选择范围。例如，它会先选中当前变量，再选中当前语句，然后选中整个方法，缩小选择则相反。</li>
-<li><strong>快捷键：</strong>Alt + 上/下 (OS X)、Ctrl+W / Ctrl + Shift + W﻿（Windows、Linux）</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/12-expand_shrink_selection.gif" alt=""></p>
-<h4 id="25-Sublime-Text式的多处选择（Sublime-Text-Multi-Selection）"><a href="#25-Sublime-Text式的多处选择（Sublime-Text-Multi-Selection）" class="headerlink" title="25. Sublime Text式的多处选择（Sublime Text Multi Selection）"></a>25. Sublime Text式的多处选择（Sublime Text Multi Selection）</h4><ul>
-<li><strong>描述：</strong>这个功能超级赞！该操作会识别当前选中字符串，选择下一个同样的字符串，并且添加一个光标。这意味着你可以在同一个文件里拥有多个光标，你可以同时在所有光标处输入任何东西。</li>
-<li><strong>快捷键：</strong>Ctrl + G(OS X)、Alt + Ｊ（Windows、Linux）</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/32-multiselection.gif" alt=""></p>
-<h4 id="26-文件结构弹窗（The-File-Structure-Popup）"><a href="#26-文件结构弹窗（The-File-Structure-Popup）" class="headerlink" title="26. 文件结构弹窗（The File Structure Popup）"></a>26. 文件结构弹窗（The File Structure Popup）</h4><ul>
-<li><p><strong>描述：</strong>该操作可以展示当前类的大纲，并且可以快速跳转。你还可以通过键盘输入来过滤结果。这是一种很高效的方法来跳转到指定方法。</p>
-</li>
-<li><p><strong>更多：</strong></p>
-<ul>
-<li>你在输入字符的时候可以用驼峰风格来过滤选项。比如输入”oCr”会找到”onCreate”</li>
-<li>你可以通过勾选多选框来决定是否显示匿名类。这在某些情况下很有用，比如你想直接跳转到一个OnClickListener的onClick方法。</li>
-</ul>
-</li>
-<li><p><strong>快捷键：</strong>Cmd + F12(OS X)、Ctrl + F12(Windows/Linux)</p>
-</li>
-<li><strong>调用：</strong>Menu → Navigate → File Structure</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/03-filestructure.gif" alt=""></p>
-<h4 id="27-切换器（The-Switcher）"><a href="#27-切换器（The-Switcher）" class="headerlink" title="27. 切换器（The Switcher）"></a>27. 切换器（The Switcher）</h4><ul>
-<li><p><strong>描述：</strong>该快捷键基本上就是IDE的alt+tab/cmd+tab命令。你可以用它在导航tab或者面板切换。一旦打开这个窗口，只要一直按着ctrl键，你可以通过对应的数字或者字母快捷键快速选择。你也可以通过backspace键来关闭一个已选中的tab或者面板。</p>
-</li>
-<li><p><strong>快捷键：</strong>Ctrl + Tab</p>
-</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/46-switcher.gif" alt=""></p>
-<h4 id="28-版本控制操作弹窗（VCS-Operations-Popup）"><a href="#28-版本控制操作弹窗（VCS-Operations-Popup）" class="headerlink" title="28. 版本控制操作弹窗（VCS Operations Popup）"></a>28. 版本控制操作弹窗（VCS Operations Popup）</h4><ul>
-<li><strong>描述：</strong>该操作会给你显示最常用的版本控制操作。如果你的项目没有用git等版本控制软件进行管理，它至少会给你提供一个由IDE维护的本地历史记录。</li>
-<li><strong>快捷键：</strong>Ctrl + V(OS X)、Alt + `(Windows/Linux)</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/37-vcspopup.gif" alt=""></p>
-<p><br></p>
-<p><hr size="3px" color="#4285F4"></p>
-<p><center> <font size="6" color="green">编码技巧</font></center></p>
-<p><hr size="3px" color="#4285F4"><br><br></p>
-<h4 id="29-列选择-块选择（Column-Selection）"><a href="#29-列选择-块选择（Column-Selection）" class="headerlink" title="29. 列选择/块选择（Column Selection）"></a>29. 列选择/块选择（Column Selection）</h4><ul>
-<li><strong>描述：</strong>正常选择时，当你向下选择时，会直接将当前行到行尾都选中，而块选择模式下，则是根据鼠标选中的矩形区域来选择。</li>
-<li><strong>调用：</strong>按住Alt，然后拖动鼠标选择。</li>
-<li>开启/关闭块选择：Menu → Edit → Column Selection Mode </li>
-<li><strong>快捷键：</strong>切换块选择模式：Cmd + Shift + 8(OS X)、Shift + Alt + Insert﻿(Windows/Linux);</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/33-columnselection.gif" alt=""></p>
-<h4 id="30-语句补全（Complete-Statement）"><a href="#30-语句补全（Complete-Statement）" class="headerlink" title="30. 语句补全（Complete Statement）"></a>30. 语句补全（Complete Statement）</h4><ul>
-<li><strong>描述：</strong>这个方法将会生成缺失的代码来补全语句，常用的使用场景如下：<ul>
-<li>在行末添加一个分号，即使光标不在行末；</li>
-<li>为if、while、for 语句生成圆括号和大括号；</li>
-<li>方法声明后，添加大括号；</li>
-</ul>
-</li>
-<li><strong>调用：</strong>Menu → Edit → Compelete Current Statement</li>
-<li><strong>快捷键：</strong>Cmd + Shift + Enter(OS X)、Ctrl + Shift + Enter(Windows/Linux)；</li>
-<li><strong>更多：</strong>如果一个语句已经补全，当你执行该操作时，则会直接跳到下一行，即使光标不在当前行的行末。</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/16-completestatement.gif" alt=""></p>
-<h4 id="31-删除行（Delete-Line）"><a href="#31-删除行（Delete-Line）" class="headerlink" title="31. 删除行（Delete Line）"></a>31. 删除行（Delete Line）</h4><ul>
-<li><strong>描述：</strong>如果没选中，则删除光标所在行，如果选中，则会删除选中所在的所有行。</li>
-<li><strong>快捷键：</strong>Cmd + Delete(OS X)、Ctrl + Y(Windows/Linux)</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/10-deleteline.gif" alt=""></p>
-<h4 id="32-行复制（Duplicate-Line）"><a href="#32-行复制（Duplicate-Line）" class="headerlink" title="32. 行复制（Duplicate Line）"></a>32. 行复制（Duplicate Line）</h4><ul>
-<li><strong>描述：</strong>复制当前行，并粘贴到下一行，这个操作不会影响剪贴板的内容。这个命令配合移动行快捷键非常有用。</li>
-<li><strong>快捷键：</strong>Cmd + D(OS X)、Ctrl + D(Windows/Linux)</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/11-duplicate_lines.gif" alt=""></p>
-<h4 id="33-编写正则表达式（Edit-Regex）"><a href="#33-编写正则表达式（Edit-Regex）" class="headerlink" title="33. 编写正则表达式（Edit Regex）"></a>33. 编写正则表达式（Edit Regex）</h4><ul>
-<li><strong>描述：</strong>使用Java编写正则表达式是一件很困难的事，主要原因是：<ul>
-<li>你必须得避开反斜杠；</li>
-<li>说实话，正则很难；</li>
-<li>看第二条。</li>
-</ul>
-</li>
-</ul>
-<p>IDE能帮我们干点啥呢？当然是一个舒服的界面来编写和测试正则啦~</p>
-<ul>
-<li><strong>快捷键：</strong>Alt + Enter → check regexp</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/68-checkregexp.gif" alt=""></p>
-<h4 id="34-使用Enter和Tab进行代码补全的差别（Enter-vs-Tab-for-Code-Completion）"><a href="#34-使用Enter和Tab进行代码补全的差别（Enter-vs-Tab-for-Code-Completion）" class="headerlink" title="34. 使用Enter和Tab进行代码补全的差别（Enter vs Tab for Code Completion）"></a>34. 使用Enter和Tab进行代码补全的差别（Enter vs Tab for Code Completion）</h4><ul>
-<li><strong>描述：</strong>代码补全时，可以使用Enter或Tab来进行补全操作，但是两者是有差别的。</li>
-<li>使用Enter时：从光标处插入补全的代码，对原来的代码不做任何操作。</li>
-<li>使用Tab时：从光标处插入补全的代码，并删除后面的代码，直到遇到点号、圆括号、分号或空格为止。</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/45-codecompletionentertab.gif" alt=""></p>
-<h4 id="35-提取方法（Extract-Method）"><a href="#35-提取方法（Extract-Method）" class="headerlink" title="35. 提取方法（Extract Method）"></a>35. 提取方法（Extract Method）</h4><ul>
-<li><strong>描述：</strong>提取一段代码块，生成一个新的方法。当你发现某个方法里面过于复杂，需要将某一段代码提取成单独的方法时，该技巧是很有用的。</li>
-<li><strong>调用：</strong>Menu → Refactor → Extract → Method</li>
-<li><strong>快捷键：</strong>Cmd + Alt + M(OS X)、Ctrl + Alt + M(Windows/Linux)；</li>
-<li><strong>更多：</strong>在提取代码的对话框，你可以更改方法的修饰符和参数的变量名。</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/53-extractmethod.gif" alt=""></p>
-<h4 id="36-提取参数（Extract-Parameter）"><a href="#36-提取参数（Extract-Parameter）" class="headerlink" title="36. 提取参数（Extract Parameter）"></a>36. 提取参数（Extract Parameter）</h4><ul>
-<li><strong>描述：</strong>这是一个提取参数的快捷操作。当你觉得可以通过提取参数来优化某个方法的时候，这个技巧将很有用。该操作会将当前值作为一个方法的参数，将旧的值放到方法调用的地方，作为传进来的参数。</li>
-<li><strong>调用：</strong>Menu → Refactor → Extract → Parameter</li>
-<li><strong>快捷键：</strong>Cmd + Alt + P(OS X)、Ctrl + Alt + P(Windows/Linux)；</li>
-<li><strong>更多：</strong>通过勾选“delegate”，可以保持旧的方法，重载生成一个新方法。</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/52-extractparam.gif" alt=""></p>
-<h4 id="37-提取变量（Extract-Variable）"><a href="#37-提取变量（Extract-Variable）" class="headerlink" title="37. 提取变量（Extract Variable）"></a>37. 提取变量（Extract Variable）</h4><ul>
-<li><strong>描述：</strong>这是一个提取变量的快捷操作。当你在没有写变量声明的直接写下值的时候，这是一个很方便生成变量声明的操作，同时还会给出一个建议的变量命名。</li>
-<li><strong>调用：</strong>Menu → Refactor → Extract → Variable</li>
-<li><strong>快捷键：</strong>Cmd + Alt + V(OS X)、Ctrl + Alt + V(Windows/Linux)；</li>
-<li><strong>更多：</strong>当你需要改变变量声明的类型，例如使用 List 替代 ArrayList，可以按下Shift + Tab，就会显示所有可用的变量类型。</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/51-extractvariable.gif" alt=""></p>
-<h4 id="38-内置（Inline）"><a href="#38-内置（Inline）" class="headerlink" title="38. 内置（Inline）"></a>38. 内置（Inline）</h4><ul>
-<li><strong>描述：</strong>当你开始对提取操作有点兴奋的时候，突然觉得东西太多了，怎么办呢？这是一个和提取相反的操作。该操作对方法、字段、参数和变量均有效。</li>
-<li><strong>调用：</strong>Menu → Refactor → Inline</li>
-<li><strong>快捷键：</strong>Cmd + Alt + N(OS X)、Ctrl + Alt + N(Windows/Linux)；</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/54-inline.gif" alt=""></p>
-<h4 id="39-合并行和文本（Join-Lines-and-Literals）"><a href="#39-合并行和文本（Join-Lines-and-Literals）" class="headerlink" title="39. 合并行和文本（Join Lines and Literals）"></a>39. 合并行和文本（Join Lines and Literals）</h4><ul>
-<li><p><strong>描述：</strong>这个操作比起在行末使劲按删除键爽多了！该操作遵守格式化规则，同时：</p>
-<ul>
-<li>合并两行注释，同时移除多余的<code>//</code>；</li>
-<li>合并多行字符串，移除<code>+</code>和双引号；</li>
-<li>合并字段的声明和初始化赋值；</li>
-</ul>
-</li>
-<li><p><strong>快捷键：</strong>Ctrl + Shift + J；</p>
-</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/18-joinlines.gif" alt=""></p>
-<h4 id="40-动态模板（Live-Templates）"><a href="#40-动态模板（Live-Templates）" class="headerlink" title="40. 动态模板（Live Templates）"></a>40. 动态模板（Live Templates）</h4><ul>
-<li><strong>描述：</strong>动态模板是一种快速插入代码片段的方法，使用动态模板比较有意思的是你可以使用合适的默认值将模板参数化，当你插入代码片段时，这可以指导你完成参数。</li>
-<li><strong>更多：</strong>如果你知道模板的缩写，就可以不必使用快捷键，只需要键入缩写并使用Tab键补全即可。</li>
-<li><strong>快捷键：</strong>Cmd + J(OS X)、Ctrl + J(Windows/Linux);</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/15-live_templates.gif" alt=""></p>
-<h4 id="41-上下移动行（Move-Lines-Up-Down）"><a href="#41-上下移动行（Move-Lines-Up-Down）" class="headerlink" title="41. 上下移动行（Move Lines Up Down）"></a>41. 上下移动行（Move Lines Up Down）</h4><ul>
-<li><strong>描述：</strong>不需要复制粘贴就可以上下移动行了。</li>
-<li><strong>快捷键：</strong>Alt + Shift + Up/Down﻿；</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/09-movelines.gif" alt=""></p>
-<h4 id="42-移动方法（Move-Methods）"><a href="#42-移动方法（Move-Methods）" class="headerlink" title="42. 移动方法（Move Methods）"></a>42. 移动方法（Move Methods）</h4><ul>
-<li><strong>描述：</strong>这个操作和移动行操作很类似，不过该操作是应用于整个方法的，在不需要复制、粘贴的情况下，就可以将整个方法块移动到另一个方法的前面或后面。该操作的实际叫做“移动语句”，这意味着你可以移动任何类型的语句，你可以方便地调整字段或内部类的顺序。</li>
-<li><strong>快捷键：</strong>Cmd + Alt + Up/Down(OS X)、Ctrl + Shift + Up/Down(Windows/Linux);</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/15-movemethods.gif" alt=""></p>
-<h4 id="43-取反补全（Negation-Completion）"><a href="#43-取反补全（Negation-Completion）" class="headerlink" title="43. 取反补全（Negation Completion）"></a>43. 取反补全（Negation Completion）</h4><ul>
-<li><strong>描述：</strong>有时你自动补全一个布尔值，然后回到该值的前面添加一个感叹号来完成取反操作，现在通过使用输入<code>!</code>代替<code>enter</code>完成补全操作，就可以跳过这些繁琐的操作了。</li>
-<li><strong>快捷键：</strong>代码补全的时候，按下<code>!</code>即可（有时需要上下键选中候选项）；</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/58-negatecompletion.gif" alt=""></p>
-<h4 id="44-后缀补全（Postfix-Completion）"><a href="#44-后缀补全（Postfix-Completion）" class="headerlink" title="44. 后缀补全（Postfix Completion）"></a>44. 后缀补全（Postfix Completion）</h4><ul>
-<li><strong>描述：</strong>你可以认为该操作是一种代码补全，它会在点号之前生成代码，而不是在点号之后。实际上你调用这个操作和正常的代码补全操作一样：在一个表达式之后输入点号。</li>
-</ul>
-<p>例如对一个列表进行遍历，你可以输入<code>myList.for</code>，然后按下Tab键，就会自动生成<code>for</code>循环代码。</p>
-<ul>
-<li><p><strong>调用：</strong><br>你可以在某个表达式后面输入点号，出现一个候选列表，在常规的代码补全提示就可以看到一系列后缀补全关键字，同样的，你也可以在<code>Editor → Postfix Completion</code>中看到一系列后缀补全关键字。</p>
-</li>
-<li><p>常用的有后缀补全关键字有：</p>
-<ul>
-<li><strong>.for</strong> (补全foreach语句)</li>
-<li><strong>.format</strong> (使用<code>String.format()</code>包裹一个字符串)</li>
-<li><strong>.cast</strong> (使用类型转化包裹一个表达式)</li>
-</ul>
-</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/33-postfixcompletion.gif" alt=""></p>
-<h4 id="45-重构（Refactor-This）"><a href="#45-重构（Refactor-This）" class="headerlink" title="45. 重构（Refactor This）"></a>45. 重构（Refactor This）</h4><ul>
-<li><p><strong>描述：</strong>该操作可以显示所有对当前选中项可行的重构方法。这个列表可以用数字序号快速选择。</p>
-</li>
-<li><p><strong>快捷键：</strong>Ctrl + T(OS X)、Ctrl + Alt + Shift + T(Windows/Linux)</p>
-</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/50-relatedfile.gif" alt=""></p>
-<h4 id="46-重命名（Rename）"><a href="#46-重命名（Rename）" class="headerlink" title="46. 重命名（Rename）"></a>46. 重命名（Rename）</h4><ul>
-<li><strong>描述：</strong>你可以通过该操作重命名变量、字段、方法、类、包。当然了，该操作会确保重命名对上下文有意义，不会无脑替换掉所有文件中的名字；</li>
-<li><strong>快捷键：</strong>Shift + F6</li>
-<li><strong>更多：</strong>如果你忘记了这个快捷键，你可以使用快速修复（Quick Fix）的快捷键，它通常包含重命名选项。</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/55-rename.gif" alt=""></p>
-<h4 id="47-分号-点-补全（Semicolon-Dot-Completion）"><a href="#47-分号-点-补全（Semicolon-Dot-Completion）" class="headerlink" title="47. 分号/点 补全（Semicolon Dot Completion）"></a>47. 分号/点 补全（Semicolon Dot Completion）</h4><ul>
-<li><strong>描述：</strong>代码补全这个功能太棒啦！我们大概都对以下这种情况很熟悉：开始输入点什么东西，接着从IDE得到一些建议的选项，然后通过Enter或者Tab来选择我们想要的补全代码。其实还有另外一种方法来选择补全的代码：我们可以输入一个点(.)或者一个分号(;)。这样就会完成补全，添加所选字符。这在结束一条语句补全或者快速链式调用方法的时候特别有用。</li>
-<li><strong>注意点：</strong>如果你要代码补全的方法需要参数，这些参数会被略过。</li>
-<li><strong>快捷键：</strong>Autocomplete + “.” 或者 “;”</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/69-semicolondotcompletion.gif" alt=""></p>
-<h4 id="48-包裹代码（Surround-With）"><a href="#48-包裹代码（Surround-With）" class="headerlink" title="48. 包裹代码（Surround With）"></a>48. 包裹代码（Surround With）</h4><ul>
-<li><p><strong>描述：</strong> 该操作可以用特定代码结构包裹住选中的代码块，通常是if语句，循环，try/catch语句或者runnable语句。<br>如果你没有选中任何东西，该操作会包裹当前一整行。</p>
-</li>
-<li><p><strong>快捷键：</strong>Cmd + Alt + T(OS X)、Ctrl + Alt + T(Windows/Linux)</p>
-</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/13-surround_with.gif" alt=""></p>
-<h4 id="49-移除包裹代码（Unwrap-Remove）"><a href="#49-移除包裹代码（Unwrap-Remove）" class="headerlink" title="49. 移除包裹代码（Unwrap Remove）"></a>49. 移除包裹代码（Unwrap Remove）</h4><ul>
-<li><p><strong>描述：</strong>该操作会移除周围的代码，它可能是一条if语句，一个while循环，一个try/catch语句甚至是一个runnable语句。该操作恰恰和包裹代码（Surround With）相反。</p>
-</li>
-<li><p><strong>快捷键：</strong>Cmd + Shift + Delete(OS X)、Ctrl + Shift + Delete(Windows/Linux)</p>
-</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/20-unwrap.gif" alt=""></p>
-<p><br></p>
-<p><hr size="3px" color="#4285F4"></p>
-<p><center> <font size="6" color="green">调试技巧</font></center></p>
-<p><hr size="3px" color="#4285F4"><br><br></p>
-<h4 id="50-分析传入数据流（Analyze-data-flow-to-here）"><a href="#50-分析传入数据流（Analyze-data-flow-to-here）" class="headerlink" title="50. 分析传入数据流（Analyze data flow to here）"></a>50. 分析传入数据流（Analyze data flow to here）</h4><ul>
-<li><strong>描述：</strong>这个操作将会根据当前选中的变量、参数或者字段，分析出其传递到此处的路径。<br>当你进入某段陌生的代码，试图明白某个参数是怎么传递到此处的时候，这是一个非常有用的操作。</li>
-<li><strong>调用：</strong>Menu → Analyze → Analyze Data Flow to Here</li>
-<li><strong>快捷键：</strong>无，可以在设置中指定。</li>
-<li><strong>相反的操作：</strong>分析传出数据流（Analyze data flow from here），这个将会分析当前选中的变量往下传递的路径，直到结束。</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/31-analyzedataflow.gif" alt=""></p>
-<h4 id="51-堆栈追踪分析（Analyze-Stacktrace）"><a href="#51-堆栈追踪分析（Analyze-Stacktrace）" class="headerlink" title="51. 堆栈追踪分析（Analyze Stacktrace）"></a>51. 堆栈追踪分析（Analyze Stacktrace）</h4><ul>
-<li><strong>描述：</strong> 这个操作读取一份堆栈追踪信息，并且使它像logcat中那样可以点击。当你从bug报告中或者终端复制了一份堆栈追踪，使用该操作可以很方便地调试。</li>
-<li><strong>调用：</strong>Menu → Analyze → Analyze Stacktrace</li>
-<li><strong>快捷键：</strong>无，可以在设置中指定。</li>
-<li><strong>更多：</strong>通过使用“ProGuard Unscramble Plugin”插件，也可以分析混淆过的堆栈追踪。</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/30-analyzestacktrace.gif" alt=""></p>
-<h4 id="52-关联调试程序（Attach-Debugger）"><a href="#52-关联调试程序（Attach-Debugger）" class="headerlink" title="52.  关联调试程序（Attach Debugger）"></a>52.  关联调试程序（Attach Debugger）</h4><ul>
-<li><strong>描述：</strong>随时启动调试程序，即使你没有以调试模式启动你的应用。这是一个很方便的操作，因为你不必为了调试程序而以调试模式重新部署你的应用。当别人正在测试应用，突然遇到一个bug而将设备交给你时，你也可以很快地进入调试模式。</li>
-<li><strong>调用：</strong>点击工具栏图标或者Menu → Build → Attach to Android Process</li>
-<li><strong>快捷键：</strong>无，可以在设置中指定，或者点击工具栏对应的图标。</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/26-attachdebugger.gif" alt=""></p>
-<h4 id="53-条件断点（Conditional-Breakpoints）"><a href="#53-条件断点（Conditional-Breakpoints）" class="headerlink" title="53. 条件断点（Conditional Breakpoints）"></a>53. 条件断点（Conditional Breakpoints）</h4><ul>
-<li><strong>描述：</strong>简单说，就是当设定的条件满足时，才会触发断点。你可以基于当前范围输入一个java布尔表达式，并且条件输入框内是支持代码补全的。</li>
-<li><strong>调用：</strong>右键需要填写表达式的断点，然后输入布尔表达式。</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/22-conditionalbreakpoint.gif" alt=""></p>
-<h4 id="54-禁用断点（Disable-Breakpoints）"><a href="#54-禁用断点（Disable-Breakpoints）" class="headerlink" title="54. 禁用断点（Disable Breakpoints）"></a>54. 禁用断点（Disable Breakpoints）</h4><ul>
-<li>这个操作将使得断点。当你有一个设置过复杂条件的断点或者是日志断点，当前不需要，但是下次又不用重新创建，该操作是很方便的。</li>
-<li><strong>调用：</strong>按住Alt，然后单击断点即可。</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/25-diablebreakpoint.gif" alt=""></p>
-<h4 id="55-计算表达式（Evaluate-Expression）"><a href="#55-计算表达式（Evaluate-Expression）" class="headerlink" title="55. 计算表达式（Evaluate Expression）"></a>55. 计算表达式（Evaluate Expression）</h4><ul>
-<li><strong>描述：</strong>这个操作可以用来查看变量的内容并且计算几乎任何有效的java表达式。需要注意的是，如果你修改了变量的状态，这个状态在你恢复代码执行后依然会保留。</li>
-<li><strong>快捷键：</strong>处在断点状态时，光标放在变量处，按Alt + F8，即可显示计算表达式对话框。</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/27-evaluateexpression.gif" alt=""></p>
-<h4 id="56-审查变量（Inspect-Variable）"><a href="#56-审查变量（Inspect-Variable）" class="headerlink" title="56. 审查变量（Inspect Variable）"></a>56. 审查变量（Inspect Variable）</h4><ul>
-<li><strong>描述：</strong>该操作可以在不打开计算表达式对话框就能审查表达式的值。</li>
-<li><strong>快捷键：</strong>调试状态下，按住Alt键，然后单击表达式即可。</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/28-mouse_evaluate_expression.gif" alt=""></p>
-<h4 id="57-日志断点（Logging-Breakpoints）"><a href="#57-日志断点（Logging-Breakpoints）" class="headerlink" title="57. 日志断点（Logging Breakpoints）"></a>57. 日志断点（Logging Breakpoints）</h4><ul>
-<li><strong>描述：</strong>这是一种打印日志而不是暂停的断点，当你想打印一些日志信息但是不想添加<code>log</code>代码后重新部署项目，这是一个非常有用的操作。</li>
-<li><strong>调用：</strong>在断点上右键，取消<code>Suspend</code>的勾选，然后勾选上<code>Log evaluated Expression</code>，并在输入框中输入你要打印的日志信息。</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/23-loggingbreakpoints.gif" alt=""></p>
-<h4 id="58-标记对象（Mark-Object）"><a href="#58-标记对象（Mark-Object）" class="headerlink" title="58. 标记对象（Mark Object）"></a>58. 标记对象（Mark Object）</h4><ul>
-<li><strong>描述：</strong>当你在调试的时候，这个操作可以让你给某个特殊的对象添加一个标签，方便你后面很快地辨认。在调试时，当你从一堆相似的对象中查看某个对象是否和之前是一样的，这就是一个非常有用的操作。</li>
-<li><strong>调用：</strong>右键你需要标记的对象，选中<code>Mark Object</code>，输入标签；</li>
-<li><strong>快捷键：</strong>选中对象时，按F3(OS X)、F11(Windows/Linux)；</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/29-markobject.gif" alt="">﻿</p>
-<h4 id="59-显示当前运行点（Show-Execution-Point）"><a href="#59-显示当前运行点（Show-Execution-Point）" class="headerlink" title="59. 显示当前运行点（Show Execution Point）"></a>59. 显示当前运行点（Show Execution Point）</h4><ul>
-<li><strong>描述：</strong>该操作会立刻把你的光标移回到当前debug处。</li>
-</ul>
-<p>通常的情况是：</p>
-<ol>
-<li>你在某处触发了断点</li>
-<li>然后在文件中随意浏览</li>
-<li>直接调用这个快捷键，快速返回之前逐步调试的地方。</li>
-</ol>
-<ul>
-<li><strong>快捷键：</strong>（Debug时) Alt + F10；</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/36-executionpoint.gif" alt=""></p>
-<h4 id="60-终止进程（Stop-Process）"><a href="#60-终止进程（Stop-Process）" class="headerlink" title="60. 终止进程（Stop Process）"></a>60. 终止进程（Stop Process）</h4><ul>
-<li><strong>描述：</strong>该操作会终止当前正在运行的任务。如果任务数量大于一，则显示一个列表供你选择。在终止调试或者中止编译的时候特别有用！</li>
-<li><strong>快捷键：</strong>Cmd + F2(OS X)、Ctrl + F2（Windows、Linux）；</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/35-stoprocess.gif" alt=""></p>
-<h4 id="61-临时断点（Temporary-Breakpoints）"><a href="#61-临时断点（Temporary-Breakpoints）" class="headerlink" title="61. 临时断点（Temporary Breakpoints）"></a>61. 临时断点（Temporary Breakpoints）</h4><ul>
-<li><p><strong>描述：</strong>通过该操作可以添加一个断点，这个断点会在第一次被命中的时候自动移除。</p>
-</li>
-<li><p><strong>快捷键：</strong>Alt + 鼠标左键 点击代码左侧（鼠标）、Cmd + Alt + Shift + F8(OS X)、Ctrl + Alt + Shift + F8(Windows/Linux)</p>
-</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/24-temporarybreakpoints.gif" alt=""></p>
-<h4 id="62-调用层级树弹窗（The-Call-Hierarchy-Popup）"><a href="#62-调用层级树弹窗（The-Call-Hierarchy-Popup）" class="headerlink" title="62. 调用层级树弹窗（The Call Hierarchy Popup）"></a>62. 调用层级树弹窗（The Call Hierarchy Popup）</h4><ul>
-<li><p><strong>描述：</strong>该操作会给你展示 在一个方法的声明和调用之间所有可能的路径。</p>
-</li>
-<li><p><strong>快捷键：</strong>Ctrl + Alt + H</p>
-</li>
-</ul>
-<p><img src="http://laobie.github.io/assets/img/studio_tips/04-callinghierarchy.gif" alt=""></p>
-
-          
+<p><img src="http://laobie.github.io/assets/img/studio_tips/07-bookmarks.gif" alt=""><br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/05/23/AndroidStudio技巧合集「常用技巧篇」/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -926,55 +487,25 @@
 
       
         
-          
-            <p>前言：<br>  本文基于 Ubuntu 环境下搭建，windows or mac 也是OK的基本差不多。。</p>
+          <p>前言：<br>  本文基于 Ubuntu 环境下搭建，windows or mac 也是OK的基本差不多。。</p>
 <h4 id="Jenkins"><a href="#Jenkins" class="headerlink" title="Jenkins"></a>Jenkins</h4><p>安装环境<br>需安装JDK，SDK，并进设置环境变量</p>
-<p>1.去官网下载最新的Jenkins版本<br><a href="https://jenkins.io/index.html" target="_blank" rel="external">点此去下载</a></p>
+<p>1.去官网下载最新的Jenkins版本<br><a href="https://jenkins.io/index.html">点此去下载</a></p>
 <p><strong>安装</strong></p>
 <blockquote>
 <p>打开终端Terminal</p>
 <ol>
-<li>输入 wget -q -O - <a href="http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key" target="_blank" rel="external">http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key</a> | sudo apt-key add -  </li>
-<li>sudo sh -c ‘echo deb <a href="http://pkg.jenkins-ci.org/debian" target="_blank" rel="external">http://pkg.jenkins-ci.org/debian</a> binary/ &gt; /etc/apt/sources.list.d/jenkins.list’  </li>
+<li>输入 wget -q -O - <a href="http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key">http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key</a> | sudo apt-key add -  </li>
+<li>sudo sh -c ‘echo deb <a href="http://pkg.jenkins-ci.org/debian">http://pkg.jenkins-ci.org/debian</a> binary/ &gt; /etc/apt/sources.list.d/jenkins.list’  </li>
 <li>sudo apt-get update  </li>
 <li>sudo apt-get install jenkins  </li>
 </ol>
 </blockquote>
 <p><code>Jenkins home: /var/lib/jenkins</code></p>
-<p><strong>启动/关闭</strong></p>
-<blockquote>
-<p>启动 sudo /etc/init.d/jenkins start<br>关闭 sudo /etc/init.d/jenkins stop  </p>
-</blockquote>
-<p><code>log路径/var/log/jenkins/jenkins.log</code></p>
-<p>访问</p>
-<blockquote>
-<p><a href="http://192.168.1.6:8080/" target="_blank" rel="external">http://192.168.1.6:8080/</a>   填写当前本机IP</p>
-</blockquote>
-<h4 id="安装JDK"><a href="#安装JDK" class="headerlink" title="安装JDK"></a>安装JDK</h4><p>去下载jdk最新1.8版本<br><a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="external">点击下载-&gt;jdk-8u77-linux-x64.tar.gz</a></p>
-<p>如果java目录没有创建则创建Java的目标路径文件夹，这里我们放在usr/lib/jvm下面。在终端下操作：<br><code>$  sudo mkdir /usr/lib/jvm</code><br>之后输入你的密码完成创建</p>
-<p>解压你下载的jdk压缩文件至你创建的目录，用以下命令。<br><code>$ sudo tar -C /usr/lib/jvm -xzf jdk-8u77-linux-x64.tar.gz</code><br>注意把你的jdk文件放到你的主页home下，这里我放到”下载”的上一个目录</p>
-<p>配置环境变量命令：<br><code>$sudo gedit ~/.bashrc</code><br>添加以下代码(目录替换为jdk目录)：<br>export JAVA_HOME=/usr/lib/jvm/java1.8<br>export JRE_HOME=${JAVA_HOME}/jre<br>export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib<br>export PATH=${JAVA_HOME}/bin:$PATH</p>
-<p>重启电脑:<br>查看是否配置成功：java -version</p>
-<blockquote>
-<p><strong>Jenkins jdk配置</strong><br><a href="http://192.168.1.6:8080/" target="_blank" rel="external">http://192.168.1.6:8080/</a>  访问jenkins首页<br>访问 系统管理 - 系统设置 -JDK - JDK安装<br>配置如下,目录配置正常目录<br><img src="http://7xt9rl.com2.z0.glb.clouddn.com/image/android/share/1460460925322.png" alt=""></p>
-</blockquote>
-<h4 id="Gradle"><a href="#Gradle" class="headerlink" title="Gradle"></a>Gradle</h4><p>通过官网下载gradle最新版本<br><a href="http://gradle.org/gradle-download/" target="_blank" rel="external">http://gradle.org/gradle-download/</a></p>
-<blockquote>
-<p><strong>Jenkins Gradle配置</strong><br><a href="http://192.168.1.6:8080/" target="_blank" rel="external">http://192.168.1.6:8080/</a>  访问jenkins首页<br>访问 系统管理 - 系统设置 -Gradle - Gradle安装<br>配置如下,目录配置正常目录<br><img src="http://7xt9rl.com2.z0.glb.clouddn.com/image/android/share/1460470573112.png" alt="enter image description here"></p>
-<h4 id="Android-SDK"><a href="#Android-SDK" class="headerlink" title="Android SDK"></a>Android SDK</h4><p>下载最新的SDK<br><a href="http://developer.android.com/intl/zh-cn/sdk/index.html#download" target="_blank" rel="external">http://developer.android.com/intl/zh-cn/sdk/index.html#download</a></p>
-</blockquote>
-<p>配置环境变量命令：<br><code>$sudo gedit ~/.bashrc</code></p>
-<p>添加以下代码：<br><code>export ANDROID_HOME=/home/parallels/Desktop/android-sdk-linux/</code></p>
-<p>然后在终端打上 adb测试是否成功配置<br>定向到sdk目录<br>/home/parallels/Desktop/android-sdk-linux/tools 运行命令 ./android 可以打开SDK Manager管理器, 然后Download部分版本与升级Tools, (目前我们5.1就Download5.1即可) buildTools升级到最新版本</p>
-<blockquote>
-<p>Jenkins配置AndroidSDK<br><a href="http://192.168.1.6:8080/jenkins/" target="_blank" rel="external">http://192.168.1.6:8080/jenkins/</a>  访问jenkins首页<br>访问 系统管理 - 系统设置 - 全局属性<br><img src="http://7xt9rl.com2.z0.glb.clouddn.com/image/android/share/1460473581118.png" alt="enter image description here"></p>
-<p><code>Jenkins编译失败,常见问题</code><br>1.Cannot run program “/home/user/Android/Sdk/build-tools/23.0.2/aapt”: error=2 No such file or directory”<br><code>sudo apt-get install lib32stdc++6 lib32z1</code>  增加支持<br>2.support 包引用失败<br><code>SDKManager Download local Support library</code>  </p>
-</blockquote>
-<h4 id="安装Nexus"><a href="#安装Nexus" class="headerlink" title="安装Nexus"></a>安装Nexus</h4><p>下载最新版的Nexus<br><a href="http://www.sonatype.org/nexus/go/" target="_blank" rel="external">http://www.sonatype.org/nexus/go/</a><br>解压到任意位置<br>使用终端进入到该目录bin目录下即可<br><code>./nexus start</code> 启动nexus<br><a href="http://192.168.1.6:8081/nexus/" target="_blank" rel="external">http://192.168.1.6:8081/nexus/</a>  访问nexus测试是否成功</p>
-<p><code>ps:下篇文章介绍 android 本地仓库构建，jenkins 基本配置介绍</code></p>
-<p>未完待续…</p>
-
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/05/21/Jenkins-Gradle-Nexus-环境搭建/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1050,12 +581,19 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
           
 
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
           
 
         </nav>
